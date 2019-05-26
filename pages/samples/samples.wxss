@@ -1,0 +1,53 @@
+/* pages/samples/samples.wxss */
+.cardBox {
+  width: 94%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  float: left;
+  margin-right:3%;
+  margin-left: 3%;
+  border-radius: 3px;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  padding-bottom: 3vw;
+}
+
+.headerBox {
+  height: 50vw;
+  border-radius: 4px;
+}
+
+.cover-img{
+  width: 100%;  
+  height: 50vw;
+  border-radius: 4px;
+}
+
+.bodyBox {
+  padding: 2vw;
+}
+
+.title{
+  font-size: 3.8vw;
+}
+
+.date{
+  font-size: 3.2vw;
+  color: #bfbfbf;
+}
+
+.description{
+  font-size: 3.2vw;
+  color: #8a8a8a;
+}
+
+.share-icon{
+  width: 4vw;
+  height: 4vw;
+}
+
+.container{
+  padding: 0 0;
+  justify-content: flex-start;
+  align-items: left;
+}

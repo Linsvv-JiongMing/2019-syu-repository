@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/map/map",
+    "pages/index/index",
+    "pages/samples/samples",
+    "pages/wxcall/wxcall",
+    "pages/essayone/essayone",
+    "pages/essaytwo/essaytwo",
+    "pages/movie/movie",
+    "pages/article/article",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#f5b43e",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "selectedIconPath": "/asset/img/didian.jpg",
+        "iconPath": "/asset/img/yellowdidian.png",
+        "pagePath": "pages/map/map",  
+        "text": "试剂地点"
+      },
+      {
+        "selectedIconPath": "/asset/img/reddaizi.png",
+        "iconPath": "/asset/img/whitedaizi.png",
+        "pagePath": "pages/index/index",      
+        "text": "自测HIV"
+      },
+      {
+        "selectedIconPath": "/asset/img/shouye1.jpg",
+        "iconPath": "/asset/img/shouye2.jpg",
+        "pagePath": "pages/main/main",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/asset/img/blueperson.jpg",
+        "iconPath": "/asset/img/purpleperson.jpg",
+        "pagePath": "pages/samples/samples",
+        "text": "案例再现"
+      },
+      {
+        "selectedIconPath": "/asset/img/greensyu.jpg",
+        "iconPath": "/asset/img/bluesyu.jpg",
+        "pagePath": "pages/wxcall/wxcall",
+        "text": "联系我们"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

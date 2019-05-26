@@ -1,0 +1,89 @@
+/*圆点数字标注*/
+.notice {
+    width:28rpx;
+    height:28rpx;
+    color:#fff;
+    text-align:center;
+    background-color:#f5b43e;
+    border-radius:50%;
+    position:absolute;
+    float:left;
+   /* margin-top: 8rpx;*/
+   top:5rpx;
+    font-size: 13px;
+    right:30rpx;
+    line-height:30rpx; }
+
+/*顶部导航样式*/
+  .navbar{ 
+ flex: none; 
+ display: flex; 
+ margin-top: 20rpx;
+ z-index: 50; 
+} 
+.navbar .item{ 
+ position: relative; 
+ flex: auto; 
+ text-align: center;
+ line-height: 60rpx; 
+ font-size: 13px;
+ color: #bfbfbf;
+ font-family: Microsoft YaHei;
+} 
+.navbar .item.active{ 
+ color: #f5b43e; 
+ font-size: 13px;
+ font-family: Microsoft YaHei;
+} 
+.navbar .item.active:after{ 
+ content: ""; 
+ display: block; 
+ position: absolute; 
+ bottom: 0; 
+ left: 0; 
+ right: 0; 
+ height: 4rpx; 
+ background: #f5b43e; 
+ font-size: 13px;
+ color: #bfbfbf;
+ font-family: Microsoft YaHei;
+}
+
+.card{
+  width: 100%;
+  margin-top: 3vw;
+  padding-bottom: 3vw;
+  border-bottom: 1px solid #e4e9f0;
+}
+
+
+.nearCard-fl {
+  width: 40%;
+}
+
+.nearCard-fl image {
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 22vw;
+    height: 15vw;
+    overflow: hidden;
+    border-radius: 1vw;
+    margin-bottom: -1px;
+}
+
+.nearCard-fr {
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+}
+
+.text{
+  font-size: 3.8vw;
+}
+
+.date{
+  font-size: 3.2vw;
+  color: #bfbfbf;
+}

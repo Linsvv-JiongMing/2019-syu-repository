@@ -1,0 +1,81 @@
+<!--pages/article.wxml-->
+<view class="navbar" style=" z-index:50">
+  <!--循环-->
+  <view wx:for="{{navbar}}" data-idx="{{index}}" wx:key="unique" class="item {{currentTab==index ? 'active' : ''}}" bindtap="navbarTap">
+    <view class="notice" wx:if="{{count[index]>0}}">{{count[index]}}</view>
+    {{item}}
+    <!--<text  bindtap="navbarTap">{{item}}</text>-->
+  </view>
+</view>
+
+<view hidden="{{currentTab !== 0}}" id="zero">
+  <block wx:for-items="{{allArticle}}" wx:key="linsvv">
+    <view class='card' id="{{item.id}}" bindtap="essay1">
+      <view class='nearCard-fl'>
+        <image src='{{item.cover}}'></image>
+      </view>
+      <view class='nearCard-fr'>
+        <view class='line'>
+          <text class='text'>{{item.title}}</text>
+        </view>
+        <view class='line'>
+          <text class='date'>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view hidden="{{currentTab !== 1}}" id="one">
+  <block wx:for-items="{{firstArticleList}}" wx:key="linsvv">
+    <view class='card' id="{{item.id}}" bindtap="essay2">
+      <view class='nearCard-fl'>
+        <image src='{{item.cover}}'></image>
+      </view>
+      <view class='nearCard-fr'>
+        <view class='line'>
+          <text class='text'>{{item.title}}</text>
+        </view>
+        <view class='line'>
+          <text class='date'>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view hidden="{{currentTab !== 2}}" id="two">
+  <block wx:for-items="{{secondArticleList}}" wx:key="linsvv">
+    <view class='card' id="{{item.id}}" bindtap="essay3">
+      <view class='nearCard-fl'>
+        <image src='{{item.cover}}'></image>
+      </view>
+      <view class='nearCard-fr'>
+        <view class='line'>
+          <text class='text'>{{item.title}}</text>
+        </view>
+        <view class='line'>
+          <text class='date'>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view hidden="{{currentTab !== 3}}" id="three">
+  <block wx:for-items="{{thirdArticleList}}" wx:key="linsvv">
+    <view class='card' id="{{item.id}}" >
+      <view class='nearCard-fl'>
+        <image src='{{item.cover}}'></image>
+      </view>
+      <view class='nearCard-fr'>
+        <view class='line'>
+          <text class='text'>{{item.title}}</text>
+        </view>
+        <view class='line'>
+          <text class='date'>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+ </block>
+</view>

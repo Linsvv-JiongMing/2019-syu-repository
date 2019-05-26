@@ -1,0 +1,21 @@
+<!--pages/main/main.wxml-->
+<view class="container">
+<!--index.wxml--> 
+<view class="empty_custom" style="padding-top:{{statusBarHeight}}px"></view>
+  <text class="welcome-title">沈阳大学红丝带协会</text>
+  <swiper class='swiper' indicator-dots='true' autoplay='true' interval='3000' duration='1000'>
+    <block wx:for='{{expers}}' wx:key="linsvv" wx:for-index='index'>
+      <swiper-item >
+          <image class = "image_item" src='{{item.src}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <block wx:for-items="{{carInfoData}}" wx:key="linsvv">
+    <view class='card'>
+        <view>
+          <text class='c-green'>{{item.title}}</text>
+          <text class='description'>{{item.detail}}</text>
+        </view>
+    </view>
+  </block>
+</view>

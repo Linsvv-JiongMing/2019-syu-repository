@@ -1,0 +1,25 @@
+<!--pages/wxcall/wxcall.wxml-->
+<view class='container'>
+  <image class="bkg" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1904790903,3080165352&fm=26&gp=0.jpg"></image>
+  <view class='title'>
+    <image class="icon-team" src="../../asset/img/teamicon.png"></image>
+    <text class="title-txt">红丝带项目主要人员</text>
+  </view>
+  <block wx:for-items="{{carInfoData}}" wx:key="linsvv">
+    <view class='card' id="{{item.id}}">
+      <view class='nearCard-fl'>
+        <image src='{{item.imgurl}}'></image>
+      </view>
+      <view class='nearCard-fr'>
+        <view class='line'>
+          <text class='text'>{{item.name}}</text>
+          <text class='description'>{{item.description}}</text>
+        </view>
+        <view class='line'>
+          <text class='text'>微信号：</text>
+          <text class='text'>{{item.wx}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

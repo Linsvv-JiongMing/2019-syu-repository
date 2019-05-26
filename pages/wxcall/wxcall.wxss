@@ -1,0 +1,85 @@
+/* pages/wxcall/wxcall.wxss */
+.container{
+  padding: 0 0;
+  justify-content: flex-start;
+}
+
+.nearCard-fl {
+  width: 40%;
+}
+
+.nearCard-fl image {
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 22vw;
+    height: 22vw;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.nearCard-fr {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.description{
+  margin-left: 5vw;
+  font-size: 3.5vw;
+  color: #888888;
+}
+
+.card{
+  width: 100%;
+  margin-top: 2vw;
+  padding-bottom: 2vw;
+  border-bottom: 1px solid #e4e9f0;
+}
+.title{
+  width: 100%;
+  margin-top: 4vw;
+  border-bottom: 1px solid #e4e9f0;
+  padding-bottom: 4vw;
+}
+
+.title-txt{
+  font-size: 4vw;
+  margin-left: 1vw;
+  height: 5vw;
+}
+
+.icon-team{
+  margin-left: 5vw;
+  width: 5vw;
+  height: 5vw;
+  margin-bottom:-1vw;
+}
+
+.icon-line{
+  width: 50%;
+  height: 2vw;
+  margin-left: 3vw;
+}
+
+.line{
+  padding-bottom: 2vw;
+}
+
+.text{
+  font-size: 3.6vw;
+}
+
+.c-green{
+  background-image: url("http://file03.16sucai.com/2016/10/1100/16sucai_p20161030003_017.JPG");
+  background-size: cover;
+  margin-left: 6vw;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.bkg{
+  width: 100%;
+  height: 45vw;
+}

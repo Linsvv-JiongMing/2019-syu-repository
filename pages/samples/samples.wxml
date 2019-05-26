@@ -1,0 +1,20 @@
+<!--pages/samples/samples.wxml-->
+<view class="container">
+<block wx:for-items="{{sampleList}}" wx:key="linsvv">
+    <view class='cardBox' id="{{item.id}}">
+      <view class='headerBox'>
+        <image  class="cover-img" bindtap="{{item.id}}" src='{{item.cover}}'></image>
+      </view>
+      <view class='bodyBox'>
+        <view class='line' >
+          <text class='title'>{{item.title}}</text>
+          <text class='description'>{{item.description}}</text>
+        </view>
+        <view class='line'>
+          <text class='date'>{{item.date}}</text>
+          <!-- <image  class="share-icon" src='../../asset/img/share.png'></image> -->
+        </view>
+      </view>
+    </view>
+  </block>
+  </view>

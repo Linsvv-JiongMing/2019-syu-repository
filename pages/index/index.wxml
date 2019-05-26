@@ -1,0 +1,45 @@
+<scroll-view scroll-x="true" class="ip_tab_comtainer">
+  <view class="ip_tab_comtainer_padd"></view>
+  <block wx:for="{{ips}}" wx:for-item="ip" wx:key="{{ip.id}}">
+    <view class="{{ip.isSelect?'ip_tab_item_s':'ip_tab_item_n'}}" bindtap="onIpItemClick" wx:key="{{ip.id}}" data-item="{{ip}}">
+      {{ip.title}}
+      </view>
+  </block>
+  <view class="ip_tab_comtainer_padd"></view>
+</scroll-view>
+
+<!--<scroll-view scroll-x="true" class="ip_tab_comtainer">
+  <view class="ip_tab_comtainer_padd"></view>
+  <block wx:for="{{ips}}" wx:for-item="ip" wx:key="{{ip.id}}">
+    <image class="text"  wx:key="{{ip.id}}" data-item="{{ip}}">
+      {{ip.url}}
+    </image>
+  </block>
+  <view class="ip_tab_comtainer_padd"></view>
+</scroll-view>-->
+
+<scroll-view scroll-x="true"> 
+<view class="uploadWrap" scroll-x="true"> 
+ <view class="upload_Item"> 
+  <image class="upload_Item_img" src="/asset/img/111.jpg"></image> 
+ </view> 
+ <view class="upload_Item"> 
+  <image class="upload_Item_img" src="/asset/img/222.png"></image> 
+ </view> 
+ <view class="upload_Item"> 
+  <image class="upload_Item_img" src="/asset/img/333.jpg"></image> 
+ </view> 
+ <view class="upload_Item"> 
+  <image class="upload_Item_img" src="/asset/img/444.jpg"></image> 
+ </view> 
+ <view class="upload_Item"> 
+  <image class="upload_Item_img" src="/asset/img/555.jpg"></image> 
+ </view> 
+</view> 
+</scroll-view> 
+
+
+<view class='content'>
+{{content}}
+</view>
+
